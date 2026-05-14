@@ -619,10 +619,10 @@ function DashboardSection({ dark }) {
                 <div style={{ padding: "16px", borderRadius: 12, background: dark ? "#111827" : "#fff", border: `1px solid ${dark ? "#1e293b" : "#e2e8f0"}` }}>
                   <div style={{ fontFamily: "'Sora',sans-serif", fontWeight: 800, fontSize: 13, color: dark ? "#e2e8f0" : "#0a0f1e", marginBottom: 12 }}>Subject Performance</div>
                   {[
-                    { sub: "Circuit Theory", pct: 85, color: "#22c55e" },
-                    { sub: "Machines", pct: 72, color: PRIMARY },
-                    { sub: "Control Sys", pct: 58, color: "#f59e0b" },
-                    { sub: "Power Systems", pct: 45, color: "#ef4444" },
+                    { sub: "Water Supply Engineeringy", pct: 85, color: "#22c55e" },
+                    { sub: "Surveying", pct: 72, color: PRIMARY },
+                    { sub: "Structures", pct: 58, color: "#f59e0b" },
+                    { sub: "Air Pollution", pct: 45, color: "#ef4444" },
                   ].map((s, i) => (
                     <div key={i} style={{ marginBottom: 10 }}>
                       <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 3 }}>
@@ -639,7 +639,7 @@ function DashboardSection({ dark }) {
                   <div style={{ fontFamily: "'Sora',sans-serif", fontWeight: 800, fontSize: 13, color: dark ? "#e2e8f0" : "#0a0f1e", marginBottom: 12 }}>Upcoming Schedule</div>
                   {[
                     { time: "Today 6PM", label: "1-to-1 Mentor Call", icon: "📞", color: PRIMARY },
-                    { time: "Tomorrow 10AM", label: "Power Systems Live", icon: "🎬", color: "#8b5cf6" },
+                                      { time: "Tomorrow 10AM", label: "Groundwater & Hydrology Live", icon: "🎬", color: "#8b5cf6" },
                     { time: "Sun 8AM", label: "Full GATE Mock", icon: "📝", color: GOLD },
                   ].map((e, i) => (
                     <div key={i} style={{ display: "flex", gap: 10, padding: "8px 0", borderBottom: i < 2 ? `1px solid ${dark ? "#1e293b" : "#f1f5f9"}` : "none", alignItems: "center" }}>
