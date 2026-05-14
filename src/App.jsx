@@ -84,10 +84,10 @@ const TESTIMONIALS = [
 
 const MENTORS = [
   
-  { name: "Prof. KPSir", exp: "20 yrs", spec: "Civil /Gate/ESE/ APPSC / SSC JE", students: "1620+", rating: "4.8" },
-  { name: "Dr. Shilpa.P", exp: "12 yrs", spec: "MECH / GATE / ESE / ISRO / DRDO / BARC", students: "100+", rating: "4.9" },
-  { name: "Prof. G.Balaraju", exp: "6 yrs", spec: "MECH / GATE / ESE / ISRO / DRDO / ", students: "1490+", rating: "4.9" },
-  { name: "Mr. Rajendra Prasad ", exp: "15 yrs", spec: "Civil /Gate/ESE/ APPSC / SSC JC", students: "620+", rating: "5.0" },
+  { name: "Prof. KPSir", exp: "20 yrs", spec: "Civil /Gate/ESE/ APPSC / SSC JE", students: "1620+", rating: "5.0" },
+  { name: "Dr. Shilpa.P", exp: "12 yrs", spec: "MECH / GATE / ESE / ISRO / DRDO / BARC", students: "100+", rating: "4.8" },
+  { name: "Prof. G.Balaraju", exp: "22 yrs", spec: "MECH / GATE / ESE / ISRO / DRDO / ", students: "1490+", rating: "5.0" },
+  { name: "Mr. Rajendra Prasad ", exp: "15 yrs", spec: "Civil /Gate/ESE/ APPSC / SSC JC", students: "620+", rating: "4.7" },
 ];
 
 function Counter({ target, suffix = "" }) {
@@ -374,8 +374,9 @@ function ExamsSection({ dark }) {
 function TestSeriesSection({ dark }) {
   const [active, setActive] = useState(0);
   const questions = [
-    { q: "In a balanced 3-phase system, the line voltage is √3 times the:", opts: ["Phase current", "Phase voltage", "Line current", "None of these"], ans: 1 },
-    { q: "Which gate is known as the 'Universal Gate'?", opts: ["AND", "OR", "NAND", "XOR"], ans: 2 },
+      {
+          q: "The first stage in water treatment is-:", opts: ["Sedimentation"	, "Filtration","Disinfection"," Coagulation and mixing"], ans: 4 },
+      { q: "If the specific gravity of a suspended particle is increased from 2 to 3 the setting velocity will?", opts: ["not changed", "get doubled", "get increased by 1.5 times", "get increased by 2.25 times"], ans: 2 },
   ];
   const [sel, setSel] = useState(null);
   const [submitted, setSubmitted] = useState(false);
@@ -498,7 +499,7 @@ function TestSeriesSection({ dark }) {
             </div>
             <div style={{ padding: "22px", borderRadius: 18, border: `1px solid ${dark ? "rgba(14,165,233,0.12)" : "#e2e8f0"}`, background: dark ? "rgba(14,165,233,0.04)" : "#fff" }}>
               <div style={{ fontFamily: "'Sora',sans-serif", fontWeight: 800, fontSize: 15, color: dark ? "#e2e8f0" : "#0a0f1e", marginBottom: 14 }}>⚠️ Weak Topics Detected</div>
-              {["Electromagnetic Fields", "Control Systems", "Power Electronics"].map((t, i) => (
+              {["Waste water treatment", "Disaster Mangement", "irrigation"].map((t, i) => (
                 <div key={i} style={{ display: "flex", alignItems: "center", gap: 10, padding: "7px 0", borderBottom: i < 2 ? `1px solid ${dark ? "#1e293b" : "#f1f5f9"}` : "none" }}>
                   <div style={{ width: 8, height: 8, borderRadius: "50%", background: "#ef4444", flexShrink: 0 }} />
                   <span style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 13, color: dark ? "#94a3b8" : "#475569", flex: 1 }}>{t}</span>
